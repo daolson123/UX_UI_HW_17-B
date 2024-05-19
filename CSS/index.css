@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    background-image: linear-gradient(#10081A 60%,#402680);
+    padding: 15px;
+}
+
+header ul {
+    float: right;
+    color: white;
+}
+
+header li {
+    display: inline-block;
+    padding: 0px 7px 9px;
+}
+
+.heroImg {
+  padding: 35px;
+  margin-left:80px;
+  margin-right:80px;
+
+  color:white;
+}
+.heroGrid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+    grid-auto-rows: auto;
+}
+@media screen and (min-width:600px)
+.card-wide {
+    grid-column: span 2 / auto;
+}
+
+.card-portrait {
+    grid-column: span 3 / auto;
+}
+
+.card-logo {
+    
+    grid-row: span 3 / auto;
+    float:inline-end;
+}
+
+button {
+    background: linear-gradient(to bottom, #5d00d6, #c500d6);
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    border-radius: 8px;
+    color: white;
+    border: 2px solid white;
+}
+
+button:hover {
+    background: linear-gradient(to top, #c500d6, #000000 60%);
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
+    border: 2px solid #ffa;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Footer container */
+.footer {
+    background-color: #D9D9D9;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer content wrapper */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+/* Email, logo, and LinkedIn links */
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Copyright text */
+.copyright {
+    margin-top: 10px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #5d00d6;
+}
